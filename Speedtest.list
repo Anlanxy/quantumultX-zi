@@ -1,0 +1,13 @@
+# > Fast
+DOMAIN-SUFFIX,fast.com,Speed
+
+# > Speedtest by Ookla
+USER-AGENT,SpeedTest*,Speed
+DOMAIN,speedtest.macpaw.com,Speed
+DOMAIN-KEYWORD,speedtest,Speed
+DOMAIN-SUFFIX,netspeedtestmaster.com,Speed
+DOMAIN-SUFFIX,ooklaserver.net,Speed
+DOMAIN-SUFFIX,speedtest.net,Speed
+
+# > Speed Test by Cloudflare
+DOMAIN-SUFFIX,speed.cloudflare.com,Speed
