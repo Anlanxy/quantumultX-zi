@@ -1,4 +1,4 @@
-USER-AGENT,PayPal*
+#USER-AGENT,PayPal*
 #HOST-KEYWORD,paypal,PayPal
 DOMAIN-SUFFIX,paypal.me
 HOST-SUFFIX,paypal.com
