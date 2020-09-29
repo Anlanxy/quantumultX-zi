@@ -1,0 +1,43 @@
+{
+    "log": {
+        "loglevel": "warning"
+    },
+    "inbounds": [
+        {
+            "port": 1080,
+            "listen": "127.0.0.1",
+            "protocol": "socks",
+            "settings": {
+                "udp": true
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "xtls.bnmc.ga",
+                        "port": 443,
+                        "users": [
+                            {
+                                "id": "c5f78f09-32c8-4b89-9511-841ee299235e",
+                                "flow": "xtls-rprx-origin",
+                                "encryption": "none",
+                                "level": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "xtls",
+                "xtlsSettings": {
+                    "serverName": "xtls.bnmc.ga"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "log": {
+        "loglevel": "warning"
+    }, 
+    "inbounds": [
+        {
+            "listen": "0.0.0.0", 
+            "port": 443, 
+            "protocol": "vless", 
+            "settings": {
+                "clients": [
+                    {
+                        "id": "c5f78f09-32c8-4b89-9511-841ee299235e", 
+                        "level": 0, 
+                        "email": "a@b.com",
+                        "flow":"xtls-rprx-origin"
+                    }
+                ], 
+                "decryption": "none", 
+                "fallbacks": [
+                    {
+                        "dest": 37212
+                    }, 
+                    {
+                        "alpn": "h2", 
+                        "dest": 37213
+                    }
+                ]
+            }, 
+            "streamSettings": {
+                "network": "tcp", 
+                "security": "xtls", 
+                "xtlsSettings": {
+                    "serverName": "xtls.bnmc.ga", 
+                    "alpn": [
+                        "h2", 
+                        "http/1.1"
+                    ], 
+                    "certificates": [
+                        {
+                            "certificateFile": "/usr/local/etc/v2ray/cert/fullchain.cer", 
+                            "keyFile": "/usr/local/etc/v2ray/cert/private.key"
+                        }
+                    ]
+                }
+            }
+        }
+    ], 
+    "outbounds": [
+        {
+            "protocol": "freedom", 
+            "settings": { }
+        }
+    ]
+}
