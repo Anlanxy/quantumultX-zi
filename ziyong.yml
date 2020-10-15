@@ -1,4 +1,656 @@
-- 美国1
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+experimental:
+  ignore-resolve-fail: true
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  nameserver:
+    - 1.2.4.8
+    - 223.5.5.5
+  fallback:
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+proxies:
+    - name: 美国1
+    server: 172.247.199.243
+    port: 443
+    type: vmess
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.01902367.xyz
+  - name: 🇺🇲 美国2
+    server: 23.225.125.82
+    port: 443
+    type: vmess
+    uuid: 3786266d-788b-40b4-b795-f37ffcfdd95a
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.56626173.xyz
+  - name: 🇺🇲 美国3
+    server: 104.233.240.249
+    port: 443
+    type: vmess
+    uuid: 16282caa-f501-45e9-a50e-e8d14f63296b
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.0363847.xyz
+  - name: 🇺🇲 美国4
+    server: 172.247.198.126
+    port: 443
+    type: vmess
+    uuid: 55ab7be2-5e6c-4110-9f16-90d00bdd53a8
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.00689323.xyz
+  - name: 🇺🇲 美国5
+    server: 23.225.57.205
+    port: 443
+    type: vmess
+    uuid: e2266c08-96aa-4ccb-b918-163db05abffa
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.4198659.xyz
+  - name: 荷兰1
+    server: 154.84.1.143
+    port: 443
+    type: vmess
+    uuid: 01d207e9-c633-4164-a3ce-a5d1061865d7
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.49836114.xyz
+  - name: 荷兰3
+    server: 154.84.1.197
+    port: 443
+    type: vmess
+    uuid: bb2840dd-c606-4af9-bdd6-23453a026ab8
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.13612617.xyz
+  - name: 荷兰4
+    server: 154.84.1.219
+    port: 443
+    type: vmess
+    uuid: 44e08632-8dbf-4b70-a893-1b31ead60ade
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.76043239.xyz
+  - name: 🇳🇱 荷兰1
+    server: 154.84.1.164
+    port: 443
+    type: vmess
+    uuid: ff658ff4-eb4c-4c42-9511-350d26d955e7
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.20800980.xyz
+  - name: 🇳🇱 荷兰2
+    server: 154.84.1.161
+    port: 443
+    type: vmess
+    uuid: e28ebaf5-b734-4b11-93b4-0eeb7a433de1
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.32429678.xyz
+  - name: 🇳🇱 荷兰3
+    server: 154.84.1.238
+    port: 443
+    type: vmess
+    uuid: 58525ec7-e918-437c-9a14-45875b3e8f6f
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.9996013755.xyz
+  - name: 法国1
+    server: 51.89.98.83
+    port: 443
+    type: vmess
+    uuid: ca2fb96a-4d01-4418-84bf-de66de70c8ab
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.6277335093.xyz
+  - name: 法国2
+    server: 51.89.122.175
+    port: 443
+    type: vmess
+    uuid: ca2fb96a-4d01-4418-84bf-de66de70c8ab
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.6277335093.xyz
+  - name: 德国1
+    server: 51.89.125.56
+    port: 443
+    type: vmess
+    uuid: 0a899b7d-de24-4133-a78d-8bd7498eb3c3
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.particularly.live
+  - name: 德国2
+    server: 51.89.54.217
+    port: 443
+    type: vmess
+    uuid: 24fe9497-b11e-4474-8ddd-63cfc471bbee
+    alterId: 64
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.sikushui.xyz
+  - name: 🇺🇸 wxf90601
+    server: 154.84.1.238
+    port: 443
+    type: vmess
+    uuid: 58525ec7-e918-437c-9a14-45875b3e8f6f
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.9996013755.xyz
+  - name: 🇺🇸 wxf90602
+    server: 154.84.1.13
+    port: 443
+    type: vmess
+    uuid: 651ccd49-f4cc-4da4-983e-ed7ba7ee8bcb
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.4212507134.xyz
+  - name: 🇺🇸 wxf90603
+    server: 154.84.1.15
+    port: 443
+    type: vmess
+    uuid: 651ccd49-f4cc-4da4-983e-ed7ba7ee8bcb
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.4212507134.xyz
+  - name: 🇺🇸 wxf90604
+    server: 23.224.69.5
+    port: 443
+    type: vmess
+    uuid: 962ca257-7797-4c17-a4ad-7a39d7795253
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.7586616.xyz
+  - name: 🇺🇸 wxf90605
+    server: 23.224.69.3
+    port: 443
+    type: vmess
+    uuid: 962ca257-7797-4c17-a4ad-7a39d7795253
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.7586616.xyz
+  - name: 🇺🇸 wxf90606
+    server: 23.225.9.252
+    port: 443
+    type: vmess
+    uuid: fd95594a-4a04-4f78-94b0-49405b9819aa
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.5307259.xyz
+  - name: 🇺🇸 wxf90607
+    server: 23.225.9.251
+    port: 443
+    type: vmess
+    uuid: fd95594a-4a04-4f78-94b0-49405b9819aa
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.5307259.xyz
+  - name: 🇺🇸 wxf90608
+    server: 154.84.1.110
+    port: 443
+    type: vmess
+    uuid: de86841d-02eb-4ca8-9d13-f735c5f3b178
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.0921976354.xyz
+  - name: 🇺🇸 wxf90609
+    server: 154.84.1.106
+    port: 443
+    type: vmess
+    uuid: de86841d-02eb-4ca8-9d13-f735c5f3b178
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.0921976354.xyz
+  - name: 🇺🇸 wxf90610
+    server: 154.84.1.139
+    port: 443
+    type: vmess
+    uuid: 72201ac4-2fcc-4609-a7a8-8ac9e5334d38
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.hxmuuqim.xyz
+  - name: 🇺🇸 美国V19
+    server: h2.coding996.com
+    port: 443
+    type: vmess
+    uuid: 2e199875-f955-45f1-8eee-d843edc3d618
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers:
+      Host: h2.coding996.com
+  - name: 🇺🇸 美国V23
+    server: 23.225.57.202
+    port: 443
+    type: vmess
+    uuid: e2266c08-96aa-4ccb-b918-163db05abffa
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.4198659.xyz
+  - name: 🇺🇸 美国V24
+    server: 45.58.145.196
+    port: 443
+    type: vmess
+    uuid: 07f413fb-297d-48e2-be17-138d5b25e18c
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.78592.xyz
+  - name: 🇺🇸 美国V49
+    server: 142.4.100.194
+    port: 443
+    type: vmess
+    uuid: fb5c511f-fbd3-48d1-befc-ee79142c050d
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.44078477.xyz
+  - name: 🇺🇸 美国V52
+    server: 142.4.126.129
+    port: 443
+    type: vmess
+    uuid: c82b9fb2-fc4e-413b-b612-57f13255cf7c
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.64140222.xyz
+  - name: 🇺🇸 美国V53
+    server: 142.4.100.193
+    port: 443
+    type: vmess
+    uuid: fb5c511f-fbd3-48d1-befc-ee79142c050d
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.44078477.xyz
+  - name: 🇺🇸 美国V54
+    server: 23.225.57.205
+    port: 443
+    type: vmess
+    uuid: e2266c08-96aa-4ccb-b918-163db05abffa
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.4198659.xyz
+  - name: 🇺🇸 美国V57
+    server: 23.225.159.51
+    port: 443
+    type: vmess
+    uuid: 6d9a4d5f-8231-46b0-82b5-62a518e573ea
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.84223.xyz
+  - name: 🇳🇱 荷兰V27
+    server: 154.84.1.11
+    port: 443
+    type: vmess
+    uuid: a0c5a96b-a0d9-4686-8eb8-b932051c79cd
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.5189462.xyz
+  - name: 🇳🇱 荷兰V28
+    server: 154.84.1.61
+    port: 443
+    type: vmess
+    uuid: fdbe9497-8585-4c0d-b2c3-cc344f435c47
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.6089793.xyz
+  - name: 🇳🇱 荷兰V29
+    server: 154.84.1.41
+    port: 443
+    type: vmess
+    uuid: 3a869a5b-5bf0-4276-a1d0-d840c0664bea
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.6460649.xyz
+  - name: 🇳🇱 荷兰V30
+    server: 154.84.1.42
+    port: 443
+    type: vmess
+    uuid: 3a869a5b-5bf0-4276-a1d0-d840c0664bea
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.6460649.xyz
+  - name: 🇳🇱 荷兰V31
+    server: 154.84.1.38
+    port: 443
+    type: vmess
+    uuid: 5c9f4ee0-499e-4524-98b6-2e195630f813
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.0656333.xyz
+  - name: 🇳🇱 荷兰V32
+    server: 154.84.1.103
+    port: 443
+    type: vmess
+    uuid: ee595b2d-ffc2-4a83-bf74-09c121ffa239
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.1898870.xyz
+  - name: 🇳🇱 荷兰V33
+    server: 154.84.1.234
+    port: 443
+    type: vmess
+    uuid: 38059d25-42f8-49af-a234-e3b880256014
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.9142674173.xyz
+  - name: 🇳🇱 荷兰V34
+    server: 154.84.1.101
+    port: 443
+    type: vmess
+    uuid: ee595b2d-ffc2-4a83-bf74-09c121ffa239
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.1898870.xyz
+  - name: 🇳🇱 荷兰V35
+    server: 154.84.1.81
+    port: 443
+    type: vmess
+    uuid: 5c9f4ee0-499e-4524-98b6-2e195630f813
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.0656333.xyz
+  - name: 🇳🇱 荷兰V37
+    server: 154.84.1.164
+    port: 443
+    type: vmess
+    uuid: ff658ff4-eb4c-4c42-9511-350d26d955e7
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.20800980.xyz
+  - name: 🇳🇱 荷兰V38
+    server: 154.84.1.197
+    port: 443
+    type: vmess
+    uuid: bb2840dd-c606-4af9-bdd6-23453a026ab8
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.13612617.xyz
+  - name: 🇳🇱 荷兰V39
+    server: 154.84.1.219
+    port: 443
+    type: vmess
+    uuid: 44e08632-8dbf-4b70-a893-1b31ead60ade
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.76043239.xyz
+  - name: 🇳🇱 荷兰V40
+    server: 154.84.1.133
+    port: 443
+    type: vmess
+    uuid: 38059d25-42f8-49af-a234-e3b880256014
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.9142674173.xyz
+  - name: 🇳🇱 荷兰V41
+    server: 154.84.1.220
+    port: 443
+    type: vmess
+    uuid: 81e548a6-5203-4230-8c99-34a26f14e779
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.28596077.xyz
+  - name: 🇳🇱 荷兰V42
+    server: 154.84.1.137
+    port: 443
+    type: vmess
+    uuid: 01d207e9-c633-4164-a3ce-a5d1061865d7
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.49836114.xyz
+  - name: 🇫🇷 法国V60
+    server: 51.89.7.16
+    port: 443
+    type: vmess
+    uuid: 0a899b7d-de24-4133-a78d-8bd7498eb3c3
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.particularly.live
+  - name: 🇫🇷 法国V61
+    server: 51.89.21.57
+    port: 443
+    type: vmess
+    uuid: 49e62934-7c38-42bb-b7a4-de5107a58509
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.82875.xyz
+  - name: 🇫🇷 法国V62
+    server: 51.89.122.175
+    port: 443
+    type: vmess
+    uuid: ca2fb96a-4d01-4418-84bf-de66de70c8ab
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.6277335093.xyz
+proxy-groups:
+  - name: 火星聯盟-學習交流
+    type: select
+    proxies:
+      - 自动选择
+      - 故障转移
+      - 美国1
       - 🇺🇲 美国2
       - 🇺🇲 美国3
       - 🇺🇲 美国4
@@ -49,3 +701,592 @@
       - 🇫🇷 法国V60
       - 🇫🇷 法国V61
       - 🇫🇷 法国V62
+  - name: 自动选择
+    type: url-test
+    proxies:
+      - 美国1
+      - 🇺🇲 美国2
+      - 🇺🇲 美国3
+      - 🇺🇲 美国4
+      - 🇺🇲 美国5
+      - 🇳🇱 荷兰1
+      - 🇳🇱 荷兰2
+      - 🇳🇱 荷兰3
+      - 荷兰1
+      - 荷兰3
+      - 荷兰4
+      - 法国1
+      - 法国2
+      - 德国1
+      - 德国2
+      - 🇺🇸 wxf90601
+      - 🇺🇸 wxf90602
+      - 🇺🇸 wxf90603
+      - 🇺🇸 wxf90604
+      - 🇺🇸 wxf90605
+      - 🇺🇸 wxf90606
+      - 🇺🇸 wxf90607
+      - 🇺🇸 wxf90608
+      - 🇺🇸 wxf90609
+      - 🇺🇸 wxf90610
+      - 🇺🇸 美国V19
+      - 🇺🇸 美国V23
+      - 🇺🇸 美国V24
+      - 🇺🇸 美国V49
+      - 🇺🇸 美国V52
+      - 🇺🇸 美国V53
+      - 🇺🇸 美国V54
+      - 🇺🇸 美国V57
+      - 🇳🇱 荷兰V27
+      - 🇳🇱 荷兰V28
+      - 🇳🇱 荷兰V29
+      - 🇳🇱 荷兰V30
+      - 🇳🇱 荷兰V31
+      - 🇳🇱 荷兰V32
+      - 🇳🇱 荷兰V33
+      - 🇳🇱 荷兰V34
+      - 🇳🇱 荷兰V35
+      - 🇳🇱 荷兰V37
+      - 🇳🇱 荷兰V38
+      - 🇳🇱 荷兰V39
+      - 🇳🇱 荷兰V40
+      - 🇳🇱 荷兰V41
+      - 🇳🇱 荷兰V42
+      - 🇫🇷 法国V60
+      - 🇫🇷 法国V61
+      - 🇫🇷 法国V62
+    url: http://www.gstatic.com/generate_204
+    interval: 86400
+  - name: 故障转移
+    type: fallback
+    proxies:
+      - 美国1
+      - 🇺🇲 美国2
+      - 🇺🇲 美国3
+      - 🇺🇲 美国4
+      - 🇺🇲 美国5
+      - 🇳🇱 荷兰1
+      - 🇳🇱 荷兰2
+      - 🇳🇱 荷兰3
+      - 荷兰1
+      - 荷兰3
+      - 荷兰4
+      - 法国1
+      - 法国2
+      - 德国1
+      - 德国2
+      - 🇺🇸 wxf90601
+      - 🇺🇸 wxf90602
+      - 🇺🇸 wxf90603
+      - 🇺🇸 wxf90604
+      - 🇺🇸 wxf90605
+      - 🇺🇸 wxf90606
+      - 🇺🇸 wxf90607
+      - 🇺🇸 wxf90608
+      - 🇺🇸 wxf90609
+      - 🇺🇸 wxf90610
+      - 🇺🇸 美国V19
+      - 🇺🇸 美国V23
+      - 🇺🇸 美国V24
+      - 🇺🇸 美国V49
+      - 🇺🇸 美国V52
+      - 🇺🇸 美国V53
+      - 🇺🇸 美国V54
+      - 🇺🇸 美国V57
+      - 🇳🇱 荷兰V27
+      - 🇳🇱 荷兰V28
+      - 🇳🇱 荷兰V29
+      - 🇳🇱 荷兰V30
+      - 🇳🇱 荷兰V31
+      - 🇳🇱 荷兰V32
+      - 🇳🇱 荷兰V33
+      - 🇳🇱 荷兰V34
+      - 🇳🇱 荷兰V35
+      - 🇳🇱 荷兰V37
+      - 🇳🇱 荷兰V38
+      - 🇳🇱 荷兰V39
+      - 🇳🇱 荷兰V40
+      - 🇳🇱 荷兰V41
+      - 🇳🇱 荷兰V42
+      - 🇫🇷 法国V60
+      - 🇫🇷 法国V61
+      - 🇫🇷 法国V62
+    url: http://www.gstatic.com/generate_204
+    interval: 7200
+rules:
+  - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
+  - DOMAIN,safebrowsing.googleapis.com,DIRECT
+  - DOMAIN,ocsp.apple.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,digicert.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,entrust.net,火星聯盟-學習交流
+  - DOMAIN,ocsp.verisign.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,apps.apple.com,火星聯盟-學習交流
+  - DOMAIN,itunes.apple.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,blobstore.apple.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,music.apple.com,DIRECT
+  - DOMAIN-SUFFIX,mzstatic.com,DIRECT
+  - DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+  - DOMAIN-SUFFIX,icloud.com,DIRECT
+  - DOMAIN-SUFFIX,icloud-content.com,DIRECT
+  - DOMAIN-SUFFIX,me.com,DIRECT
+  - DOMAIN-SUFFIX,mzstatic.com,DIRECT
+  - DOMAIN-SUFFIX,akadns.net,DIRECT
+  - DOMAIN-SUFFIX,aaplimg.com,DIRECT
+  - DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+  - DOMAIN-SUFFIX,apple.com,DIRECT
+  - DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+  - DOMAIN-SUFFIX,cn,DIRECT
+  - DOMAIN-KEYWORD,-cn,DIRECT
+  - DOMAIN-SUFFIX,126.com,DIRECT
+  - DOMAIN-SUFFIX,126.net,DIRECT
+  - DOMAIN-SUFFIX,127.net,DIRECT
+  - DOMAIN-SUFFIX,163.com,DIRECT
+  - DOMAIN-SUFFIX,360buyimg.com,DIRECT
+  - DOMAIN-SUFFIX,36kr.com,DIRECT
+  - DOMAIN-SUFFIX,acfun.tv,DIRECT
+  - DOMAIN-SUFFIX,air-matters.com,DIRECT
+  - DOMAIN-SUFFIX,aixifan.com,DIRECT
+  - DOMAIN-SUFFIX,akamaized.net,DIRECT
+  - DOMAIN-KEYWORD,alicdn,DIRECT
+  - DOMAIN-KEYWORD,alipay,DIRECT
+  - DOMAIN-KEYWORD,taobao,DIRECT
+  - DOMAIN-SUFFIX,amap.com,DIRECT
+  - DOMAIN-SUFFIX,autonavi.com,DIRECT
+  - DOMAIN-KEYWORD,baidu,DIRECT
+  - DOMAIN-SUFFIX,bdimg.com,DIRECT
+  - DOMAIN-SUFFIX,bdstatic.com,DIRECT
+  - DOMAIN-SUFFIX,bilibili.com,DIRECT
+  - DOMAIN-SUFFIX,bilivideo.com,DIRECT
+  - DOMAIN-SUFFIX,caiyunapp.com,DIRECT
+  - DOMAIN-SUFFIX,clouddn.com,DIRECT
+  - DOMAIN-SUFFIX,cnbeta.com,DIRECT
+  - DOMAIN-SUFFIX,cnbetacdn.com,DIRECT
+  - DOMAIN-SUFFIX,cootekservice.com,DIRECT
+  - DOMAIN-SUFFIX,csdn.net,DIRECT
+  - DOMAIN-SUFFIX,ctrip.com,DIRECT
+  - DOMAIN-SUFFIX,dgtle.com,DIRECT
+  - DOMAIN-SUFFIX,dianping.com,DIRECT
+  - DOMAIN-SUFFIX,douban.com,DIRECT
+  - DOMAIN-SUFFIX,doubanio.com,DIRECT
+  - DOMAIN-SUFFIX,duokan.com,DIRECT
+  - DOMAIN-SUFFIX,easou.com,DIRECT
+  - DOMAIN-SUFFIX,ele.me,DIRECT
+  - DOMAIN-SUFFIX,feng.com,DIRECT
+  - DOMAIN-SUFFIX,fir.im,DIRECT
+  - DOMAIN-SUFFIX,frdic.com,DIRECT
+  - DOMAIN-SUFFIX,g-cores.com,DIRECT
+  - DOMAIN-SUFFIX,godic.net,DIRECT
+  - DOMAIN-SUFFIX,gtimg.com,DIRECT
+  - DOMAIN,cdn.hockeyapp.net,DIRECT
+  - DOMAIN-SUFFIX,hdslb.com,DIRECT
+  - DOMAIN-SUFFIX,hongxiu.com,DIRECT
+  - DOMAIN-SUFFIX,hxcdn.net,DIRECT
+  - DOMAIN-SUFFIX,iciba.com,DIRECT
+  - DOMAIN-SUFFIX,ifeng.com,DIRECT
+  - DOMAIN-SUFFIX,ifengimg.com,DIRECT
+  - DOMAIN-SUFFIX,ipip.net,DIRECT
+  - DOMAIN-SUFFIX,iqiyi.com,DIRECT
+  - DOMAIN-SUFFIX,jd.com,DIRECT
+  - DOMAIN-SUFFIX,jianshu.com,DIRECT
+  - DOMAIN-SUFFIX,knewone.com,DIRECT
+  - DOMAIN-SUFFIX,le.com,DIRECT
+  - DOMAIN-SUFFIX,lecloud.com,DIRECT
+  - DOMAIN-SUFFIX,lemicp.com,DIRECT
+  - DOMAIN-SUFFIX,licdn.com,DIRECT
+  - DOMAIN-SUFFIX,linkedin.com,DIRECT
+  - DOMAIN-SUFFIX,luoo.net,DIRECT
+  - DOMAIN-SUFFIX,meituan.com,DIRECT
+  - DOMAIN-SUFFIX,meituan.net,DIRECT
+  - DOMAIN-SUFFIX,mi.com,DIRECT
+  - DOMAIN-SUFFIX,miaopai.com,DIRECT
+  - DOMAIN-SUFFIX,microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,microsoftonline.com,DIRECT
+  - DOMAIN-SUFFIX,miui.com,DIRECT
+  - DOMAIN-SUFFIX,miwifi.com,DIRECT
+  - DOMAIN-SUFFIX,mob.com,DIRECT
+  - DOMAIN-SUFFIX,netease.com,DIRECT
+  - DOMAIN-SUFFIX,office.com,DIRECT
+  - DOMAIN-SUFFIX,office365.com,DIRECT
+  - DOMAIN-KEYWORD,officecdn,DIRECT
+  - DOMAIN-SUFFIX,oschina.net,DIRECT
+  - DOMAIN-SUFFIX,ppsimg.com,DIRECT
+  - DOMAIN-SUFFIX,pstatp.com,DIRECT
+  - DOMAIN-SUFFIX,qcloud.com,DIRECT
+  - DOMAIN-SUFFIX,qdaily.com,DIRECT
+  - DOMAIN-SUFFIX,qdmm.com,DIRECT
+  - DOMAIN-SUFFIX,qhimg.com,DIRECT
+  - DOMAIN-SUFFIX,qhres.com,DIRECT
+  - DOMAIN-SUFFIX,qidian.com,DIRECT
+  - DOMAIN-SUFFIX,qihucdn.com,DIRECT
+  - DOMAIN-SUFFIX,qiniu.com,DIRECT
+  - DOMAIN-SUFFIX,qiniucdn.com,DIRECT
+  - DOMAIN-SUFFIX,qiyipic.com,DIRECT
+  - DOMAIN-SUFFIX,qq.com,DIRECT
+  - DOMAIN-SUFFIX,qqurl.com,DIRECT
+  - DOMAIN-SUFFIX,rarbg.to,DIRECT
+  - DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+  - DOMAIN-SUFFIX,segmentfault.com,DIRECT
+  - DOMAIN-SUFFIX,sinaapp.com,DIRECT
+  - DOMAIN-SUFFIX,smzdm.com,DIRECT
+  - DOMAIN-SUFFIX,snapdrop.net,DIRECT
+  - DOMAIN-SUFFIX,sogou.com,DIRECT
+  - DOMAIN-SUFFIX,sogoucdn.com,DIRECT
+  - DOMAIN-SUFFIX,sohu.com,DIRECT
+  - DOMAIN-SUFFIX,soku.com,DIRECT
+  - DOMAIN-SUFFIX,speedtest.net,DIRECT
+  - DOMAIN-SUFFIX,sspai.com,DIRECT
+  - DOMAIN-SUFFIX,suning.com,DIRECT
+  - DOMAIN-SUFFIX,taobao.com,DIRECT
+  - DOMAIN-SUFFIX,tencent.com,DIRECT
+  - DOMAIN-SUFFIX,tenpay.com,DIRECT
+  - DOMAIN-SUFFIX,tianyancha.com,DIRECT
+  - DOMAIN-SUFFIX,tmall.com,DIRECT
+  - DOMAIN-SUFFIX,tudou.com,DIRECT
+  - DOMAIN-SUFFIX,umetrip.com,DIRECT
+  - DOMAIN-SUFFIX,upaiyun.com,DIRECT
+  - DOMAIN-SUFFIX,upyun.com,DIRECT
+  - DOMAIN-SUFFIX,veryzhun.com,DIRECT
+  - DOMAIN-SUFFIX,weather.com,DIRECT
+  - DOMAIN-SUFFIX,weibo.com,DIRECT
+  - DOMAIN-SUFFIX,xiami.com,DIRECT
+  - DOMAIN-SUFFIX,xiami.net,DIRECT
+  - DOMAIN-SUFFIX,xiaomicp.com,DIRECT
+  - DOMAIN-SUFFIX,ximalaya.com,DIRECT
+  - DOMAIN-SUFFIX,xmcdn.com,DIRECT
+  - DOMAIN-SUFFIX,xunlei.com,DIRECT
+  - DOMAIN-SUFFIX,yhd.com,DIRECT
+  - DOMAIN-SUFFIX,yihaodianimg.com,DIRECT
+  - DOMAIN-SUFFIX,yinxiang.com,DIRECT
+  - DOMAIN-SUFFIX,ykimg.com,DIRECT
+  - DOMAIN-SUFFIX,youdao.com,DIRECT
+  - DOMAIN-SUFFIX,youku.com,DIRECT
+  - DOMAIN-SUFFIX,zealer.com,DIRECT
+  - DOMAIN-SUFFIX,zhihu.com,DIRECT
+  - DOMAIN-SUFFIX,zhimg.com,DIRECT
+  - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+  - DOMAIN-SUFFIX,zoho.com,DIRECT
+  - DOMAIN-KEYWORD,amazon,火星聯盟-學習交流
+  - DOMAIN-KEYWORD,google,火星聯盟-學習交流
+  - DOMAIN-KEYWORD,gmail,火星聯盟-學習交流
+  - DOMAIN-KEYWORD,youtube,火星聯盟-學習交流
+  - DOMAIN-KEYWORD,facebook,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,fb.me,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,fbcdn.net,火星聯盟-學習交流
+  - DOMAIN-KEYWORD,twitter,火星聯盟-學習交流
+  - DOMAIN-KEYWORD,instagram,火星聯盟-學習交流
+  - DOMAIN-KEYWORD,dropbox,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,twimg.com,火星聯盟-學習交流
+  - DOMAIN-KEYWORD,blogspot,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,youtu.be,火星聯盟-學習交流
+  - DOMAIN-KEYWORD,whatsapp,火星聯盟-學習交流
+  - DOMAIN-KEYWORD,admarvel,REJECT
+  - DOMAIN-KEYWORD,admaster,REJECT
+  - DOMAIN-KEYWORD,adsage,REJECT
+  - DOMAIN-KEYWORD,adsmogo,REJECT
+  - DOMAIN-KEYWORD,adsrvmedia,REJECT
+  - DOMAIN-KEYWORD,adwords,REJECT
+  - DOMAIN-KEYWORD,adservice,REJECT
+  - DOMAIN-KEYWORD,domob,REJECT
+  - DOMAIN-KEYWORD,duomeng,REJECT
+  - DOMAIN-KEYWORD,dwtrack,REJECT
+  - DOMAIN-KEYWORD,guanggao,REJECT
+  - DOMAIN-KEYWORD,lianmeng,REJECT
+  - DOMAIN-SUFFIX,mmstat.com,REJECT
+  - DOMAIN-KEYWORD,omgmta,REJECT
+  - DOMAIN-KEYWORD,openx,REJECT
+  - DOMAIN-KEYWORD,partnerad,REJECT
+  - DOMAIN-KEYWORD,pingfore,REJECT
+  - DOMAIN-KEYWORD,supersonicads,REJECT
+  - DOMAIN-KEYWORD,tracking,REJECT
+  - DOMAIN-KEYWORD,uedas,REJECT
+  - DOMAIN-KEYWORD,umeng,REJECT
+  - DOMAIN-KEYWORD,usage,REJECT
+  - DOMAIN-KEYWORD,wlmonitor,REJECT
+  - DOMAIN-KEYWORD,zjtoolbar,REJECT
+  - DOMAIN-SUFFIX,9to5mac.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,abpchina.org,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,adblockplus.org,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,adobe.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,alfredapp.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,amplitude.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,ampproject.org,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,android.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,angularjs.org,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,aolcdn.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,apkpure.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,appledaily.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,appshopper.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,appspot.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,arcgis.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,archive.org,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,armorgames.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,aspnetcdn.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,att.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,awsstatic.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,azureedge.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,azurewebsites.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,bing.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,bintray.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,bit.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,bit.ly,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,bitbucket.org,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,bjango.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,bkrtx.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,blog.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,blogcdn.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,blogger.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,blogsmithmedia.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,blogspot.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,blogspot.hk,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,bloomberg.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,box.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,box.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,cachefly.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,chromium.org,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,cl.ly,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,cloudflare.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,cloudfront.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,cloudmagic.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,cmail19.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,cnet.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,cocoapods.org,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,comodoca.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,crashlytics.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,culturedcode.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,d.pr,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,danilo.to,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,dayone.me,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,db.tt,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,deskconnect.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,disq.us,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,disqus.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,disquscdn.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,dnsimple.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,docker.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,dribbble.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,droplr.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,duckduckgo.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,dueapp.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,dytt8.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,edgecastcdn.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,edgekey.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,edgesuite.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,engadget.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,entrust.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,eurekavpt.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,evernote.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,fabric.io,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,fast.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,fastly.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,fc2.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,feedburner.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,feedly.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,feedsportal.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,fiftythree.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,firebaseio.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,flexibits.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,flickr.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,flipboard.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,g.co,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,gabia.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,geni.us,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,gfx.ms,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,ggpht.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,ghostnoteapp.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,git.io,火星聯盟-學習交流
+  - DOMAIN-KEYWORD,github,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,globalsign.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,gmodules.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,godaddy.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,golang.org,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,gongm.in,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,goo.gl,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,goodreaders.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,goodreads.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,gravatar.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,gstatic.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,gvt0.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,hockeyapp.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,hotmail.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,icons8.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,ifixit.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,ift.tt,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,ifttt.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,iherb.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,imageshack.us,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,img.ly,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,imgur.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,imore.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,instapaper.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,ipn.li,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,is.gd,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,issuu.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,itgonglun.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,itun.es,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,ixquick.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,j.mp,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,js.revsci.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,jshint.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,jtvnw.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,justgetflux.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,kat.cr,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,klip.me,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,libsyn.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,linode.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,lithium.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,littlehj.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,live.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,live.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,livefilestore.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,llnwd.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,macid.co,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,macromedia.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,macrumors.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,mashable.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,mathjax.org,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,medium.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,mega.co.nz,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,mega.nz,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,megaupload.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,microsofttranslator.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,mindnode.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,mobile01.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,modmyi.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,msedge.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,myfontastic.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,name.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,nextmedia.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,nsstatic.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,nssurge.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,nyt.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,nytimes.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,omnigroup.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,onedrive.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,onenote.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,ooyala.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,openvpn.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,openwrt.org,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,orkut.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,osxdaily.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,outlook.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,ow.ly,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,paddleapi.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,parallels.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,parse.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,pdfexpert.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,periscope.tv,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,pinboard.in,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,pinterest.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,pixelmator.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,pixiv.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,playpcesor.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,playstation.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,playstation.com.hk,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,playstation.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,playstationnetwork.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,pushwoosh.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,rime.im,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,servebom.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,sfx.ms,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,shadowsocks.org,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,sharethis.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,shazam.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,skype.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,smartdns火星聯盟-學習交流.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,smartmailcloud.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,sndcdn.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,sony.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,soundcloud.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,sourceforge.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,spotify.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,squarespace.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,sstatic.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,st.luluku.pw,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,stackoverflow.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,startpage.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,staticflickr.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,steamcommunity.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,symauth.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,symcb.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,symcd.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,tapbots.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,tapbots.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,tdesktop.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,techcrunch.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,techsmith.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,thepiratebay.org,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,theverge.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,time.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,timeinc.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,tiny.cc,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,tinypic.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,tmblr.co,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,todoist.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,trello.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,trustasiassl.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,tumblr.co,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,tumblr.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,tweetdeck.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,tweetmarker.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,twitch.tv,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,txmblr.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,typekit.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,ubertags.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,ublock.org,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,ubnt.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,ulyssesapp.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,urchin.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,usertrust.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,v.gd,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,v2ex.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,vimeo.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,vimeocdn.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,vine.co,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,vivaldi.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,vox-cdn.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,vsco.co,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,vultr.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,w.org,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,w3schools.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,webtype.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,wikiwand.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,wikileaks.org,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,wikimedia.org,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,wikipedia.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,wikipedia.org,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,windows.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,windows.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,wire.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,wordpress.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,workflowy.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,wp.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,wsj.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,wsj.net,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,xda-developers.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,xeeno.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,xiti.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,yahoo.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,yimg.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,ying.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,yoyo.org,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,ytimg.com,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,telegra.ph,火星聯盟-學習交流
+  - DOMAIN-SUFFIX,telegram.org,火星聯盟-學習交流
+  - IP-CIDR,91.108.4.0/22,火星聯盟-學習交流,no-resolve
+  - IP-CIDR,91.108.8.0/22,火星聯盟-學習交流,no-resolve
+  - IP-CIDR,91.108.12.0/22,火星聯盟-學習交流,no-resolve
+  - IP-CIDR,91.108.16.0/22,火星聯盟-學習交流,no-resolve
+  - IP-CIDR,91.108.56.0/22,火星聯盟-學習交流,no-resolve
+  - IP-CIDR,149.154.160.0/22,火星聯盟-學習交流,no-resolve
+  - IP-CIDR,149.154.164.0/22,火星聯盟-學習交流,no-resolve
+  - IP-CIDR,149.154.168.0/22,火星聯盟-學習交流,no-resolve
+  - IP-CIDR,149.154.172.0/22,火星聯盟-學習交流,no-resolve
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,17.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,火星聯盟-學習交流
