@@ -17,6 +17,18 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
+  - name: ss-of
+    type: ss
+    server: 18.166.178.200
+    port: 39326
+    cipher: chacha20-ietf-poly1305
+    password: "jkl987"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      tls: true
+      skip-cert-verify: false
+      host: www.bing.com
   - name: 美国1
     server: 172.247.199.243
     port: 443
