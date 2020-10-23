@@ -1,0 +1,8 @@
+trojan = tuoku8.tk:443, password=ulXLeTET, over-tls=true, tls-host=, fast-open=false, udp-relay=false, tls-verification=true, tag=🇺🇲 US_848
+trojan = trojan.kdbaidu.com:443, password=KinhUBAQ_Pro, over-tls=true, tls-host=, fast-open=false, udp-relay=false, tls-verification=true, tag=🇯🇵 JP_334
+trojan = ovo.jp.trojannb.ml:443, password=v2.qovoq.ml, over-tls=true, tls-host=, fast-open=false, udp-relay=false, tls-verification=true, tag=🇯🇵 JP_335
+trojan = www.bing2333.top:443, password=bing2333, over-tls=true, tls-host=, fast-open=false, udp-relay=false, tls-verification=true, tag=🇷🇺 RU_520
+trojan = trojan.kdbaidu.com:443, password=KinhUBAQ_Pro, over-tls=true, tls-host=, fast-open=false, udp-relay=false, tls-verification=true, tag=🇯🇵 JP_334 2
+trojan = ovo.jp.trojannb.ml:443, password=v2.qovoq.ml, over-tls=true, tls-host=, fast-open=false, udp-relay=false, tls-verification=true, tag=🇯🇵 JP_335 2
+trojan = www.bing2333.top:443, password=bing2333, over-tls=true, tls-host=, fast-open=false, udp-relay=false, tls-verification=true, tag=🇷🇺 RU_520 2
+trojan = tuoku8.tk:443, password=ulXLeTET, over-tls=true, tls-host=, fast-open=false, udp-relay=false, tls-verification=true, tag=🇺🇲 US_848 2
