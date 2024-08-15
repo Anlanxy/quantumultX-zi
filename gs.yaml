@@ -15,20 +15,20 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: AE Rica 02, server: pfxwhz.cscsgsg.xyz, port: 12010, type: vmess, uuid: 19b189b5-260e-377b-bc74-5698a4a7f70c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: FI Hetzner 01, server: ddbcb0bb-0765-dacc-887b-bf8c113b6d02.xn--37qy2m7z0cohn.xn--6qq986b3xl, port: 20012, type: vmess, uuid: b6fed9eb-9589-4564-9202-5b52680a467f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: MX Truxgo 03, server: wduzpt.gxcvbmj.xyz, port: 22234, type: vmess, uuid: 8d7e53a7-0313-3250-bf2a-a1068268850b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: NG Melbikomas 01, server: wduzpt.gxcvbmj.xyz, port: 22238, type: vmess, uuid: 6ea392c2-0636-3d4f-a6a2-f38a76e216d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: NZ MikiPro 02, server: fdksxn.kghkjasfh.xyz, port: 12233, type: vmess, uuid: 6ea392c2-0636-3d4f-a6a2-f38a76e216d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK Hong 06, server: dcumoz.cijhgvbm.xyz, port: 10031, type: vmess, uuid: 42006f77-5c96-3f27-b059-983c064325cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 NL Chociz 03, server: cyjsnl.ghskgvb.xyz, port: 20020, type: vmess, uuid: 05d8e65f-0775-36a6-9336-1106d9ed041c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港, server: 120.232.153.37, port: 42055, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港2, server: 183.236.51.23, port: 45020, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港5, server: 183.236.51.23, port: 54104, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港KT, server: 172.67.141.111, port: 8443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: h1.fjdd.store, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 🇯🇵 日本特殊, server: 47.128.150.72, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇺🇸 美国, server: 104.19.51.232, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip005.dtku47.xyz}}, udp: true}
-  - {name: 🇺🇸 美国5, server: 104.26.0.56, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
+  - {"name":"🇭🇰 HongKong 01","server":"dcumoz.cijhgvbm.xyz","port":10031,"type":"vmess","uuid":"42006f77-5c96-3f27-b059-983c064325cd","alterId":0,"cipher":"auto","tls":false,"skip-cert-verify":true,"udp":true}
+  - {"name":"🇭🇰 HongKong 02","server":"120.232.153.37","port":42055,"type":"vmess","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"cipher":"auto","tls":false,"skip-cert-verify":true,"udp":true}
+  - {"name":"🇭🇰 HongKong 03","server":"183.236.51.23","port":45020,"type":"vmess","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"cipher":"auto","tls":false,"skip-cert-verify":true,"udp":true}
+  - {"name":"🇭🇰 HongKong 04","server":"183.236.51.23","port":54104,"type":"vmess","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"cipher":"auto","tls":false,"skip-cert-verify":true,"udp":true}
+  - {"name":"🇭🇰 HongKong 05","server":"172.67.141.111","port":8443,"type":"ss","cipher":"aes-128-gcm","password":"a-wym4ovY4Yw","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","host":"h1.fjdd.store","path":"","tls":true,"mux":true,"skip-cert-verify":true},"udp":true}
+  - {"name":"🇯🇵 Japan 01","server":"47.128.150.72","port":443,"type":"ss","cipher":"aes-256-cfb","password":"amazonskr05","udp":true}
+  - {"name":"🇺🇸 United States 01","server":"104.19.51.232","port":2086,"type":"vmess","uuid":"29eebb60-b27b-4a9d-bba5-947763d9205e","alterId":0,"cipher":"auto","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"Host":"ip005.dtku47.xyz"}},"udp":true}
+  - {"name":"🇺🇸 United States 02","server":"104.26.0.56","port":2086,"type":"vmess","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"cipher":"auto","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"Host":"ip14.freegradely.xyz"}},"udp":true}
+  - {"name":"🇦🇪 United Arab Emirates 01","server":"pfxwhz.cscsgsg.xyz","port":12010,"type":"vmess","uuid":"19b189b5-260e-377b-bc74-5698a4a7f70c","alterId":0,"cipher":"auto","tls":false,"skip-cert-verify":true,"udp":true}
+  - {"name":"🇫🇮 Finland 01","server":"ddbcb0bb-0765-dacc-887b-bf8c113b6d02.xn--37qy2m7z0cohn.xn--6qq986b3xl","port":20012,"type":"vmess","uuid":"b6fed9eb-9589-4564-9202-5b52680a467f","alterId":0,"cipher":"auto","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"Host":"tms.dingtalk.com"}},"udp":true}
+  - {"name":"🇲🇽 Mexico 01","server":"wduzpt.gxcvbmj.xyz","port":22234,"type":"vmess","uuid":"8d7e53a7-0313-3250-bf2a-a1068268850b","alterId":0,"cipher":"auto","tls":false,"skip-cert-verify":true,"udp":true}
+  - {"name":"🇳🇬 Nigeria 01","server":"wduzpt.gxcvbmj.xyz","port":22238,"type":"vmess","uuid":"6ea392c2-0636-3d4f-a6a2-f38a76e216d3","alterId":0,"cipher":"auto","tls":false,"skip-cert-verify":true,"udp":true}
+  - {"name":"🇳🇱 Netherlands 01","server":"cyjsnl.ghskgvb.xyz","port":20020,"type":"vmess","uuid":"05d8e65f-0775-36a6-9336-1106d9ed041c","alterId":0,"cipher":"auto","tls":false,"skip-cert-verify":true,"udp":true}
+  - {"name":"🇳🇿 New Zealand 01","server":"fdksxn.kghkjasfh.xyz","port":12233,"type":"vmess","uuid":"6ea392c2-0636-3d4f-a6a2-f38a76e216d3","alterId":0,"cipher":"auto","tls":false,"skip-cert-verify":true,"udp":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -41,20 +41,20 @@ proxy-groups:
     interval: 120
     tolerance: 30
     proxies:
-      - AE Rica 02
-      - FI Hetzner 01
-      - MX Truxgo 03
-      - NG Melbikomas 01
-      - NZ MikiPro 02
-      - 🇭🇰 HK Hong 06
-      - 🇳🇱 NL Chociz 03
-      - 🇭🇰 香港
-      - 🇭🇰 香港2
-      - 🇭🇰 香港5
-      - 🇭🇰 香港KT
-      - 🇯🇵 日本特殊
-      - 🇺🇸 美国
-      - 🇺🇸 美国5
+      - 🇭🇰 HongKong 01
+      - 🇭🇰 HongKong 02
+      - 🇭🇰 HongKong 03
+      - 🇭🇰 HongKong 04
+      - 🇭🇰 HongKong 05
+      - 🇯🇵 Japan 01
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇦🇪 United Arab Emirates 01
+      - 🇫🇮 Finland 01
+      - 🇲🇽 Mexico 01
+      - 🇳🇬 Nigeria 01
+      - 🇳🇱 Netherlands 01
+      - 🇳🇿 New Zealand 01
   - name: 🌍 国外媒体
     type: select
     proxies:
